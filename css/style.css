@@ -1,24 +1,163 @@
 /* Styles for Mobile Site */
 
+body {
+    font-family: Arial, sans-serif;
+    color: #3C322E
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
 /* Header & Hero */
 
+header {
+    background-color: #3CA69B;
+    padding: 20px;
+    text-align: center;
+}
+
+#hero {
+    padding: 20px;
+    text-align: center;
+}
+
+#hero img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    margin: 10px 0;
+}
 
 /* Projects */
 
+#projects {
+    padding: 20px;
+    background-color: #3CA69B;
+}
+
+.project {
+    margin-bottom: 20px;
+    border: 1px solid #E64A01;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.project img {
+    border-radius: 10px;
+    height: 400px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+h3 {
+    color: #915A40;
+    margin-bottom: 5px;
+}
+
 /* Reviews */
 
+#reviews {
+    padding: 20px;
+    background-color: #3CA69B;
+}
+
+.review {
+    margin-bottom: 20px;
+    border: 1px solid #E64A01;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #19E6D1;
+}
+
+.name {
+    font-weight: bold;
+    color: #E64A01;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3C322E;
+}
+
+.rating {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #3E6662;
+}
+
+.content {
+    font-style: italic;
+}
 /* Footer */
 
+footer {
+    background-color: #3C322E;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
 
 /* Media state for Desktop site */
 @media (min-width: 1000px) {
 
     /* Header & Hero */
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #hero img {
+        width: 400px;
+        margin-right: 20px;
+    }
+
+    #hero div {
+        max-width: 500px;
+        text-align: left;
+    }
 
     /* Projects */
+
+    #projects {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    .project {
+        flex: 1; 
+        max-width: 25%; 
+        margin-bottom: 20px;
+        margin-right: 20px; 
+    }
 
     /* Reviews */
 
     /* Footer */
+    footer {
+        padding: 20px;
+        font-size: 1em;
+    }
 
 }
