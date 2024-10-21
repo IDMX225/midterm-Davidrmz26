@@ -11,3 +11,5 @@ Put your images in:
 Put your code in:
 
 > index.html
+
+Midterm: David Ramirez
